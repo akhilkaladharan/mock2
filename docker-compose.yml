@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+portfolio:
+image: akhiakhi1/agy-portfolio:v1
+container_name: portfolio-app
+ports:
+- "8080:80"
+restart: always
+volumes:
+- nginx_logs: /var/log/nginx
+
+volumes:
+nginx_logs:
